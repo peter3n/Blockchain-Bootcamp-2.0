@@ -2,7 +2,7 @@ async function main() {
   // Fetch contract to deploy
   const Token = await ethers.getContractFactory("Token")
 
-  // Deploy contact
+  // Deploy contract
   const token = await Token.deploy()
   // Get info that was deployed and load it up to our smart contract
   await token.deployed()

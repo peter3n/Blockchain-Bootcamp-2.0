@@ -10,5 +10,5 @@ Languages/Libraries
 - Redux
 
 Framework
-Hardhat
+- Hardhat
 

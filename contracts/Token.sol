@@ -83,8 +83,8 @@ contract Token {
 		public
 		returns (bool success)
 	{
-		require(_value <= balanceOf[_from]);
 		//check approval
+		require(_value <= balanceOf[_from]);
 		require(_value <= allowance[_from][msg.sender]);
 
 		//Reset Allowance

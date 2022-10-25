@@ -137,9 +137,9 @@ describe('Token', () => {
 
 		describe('Success', () => {
 			beforeEach(async () => {
-			//Exchange is transfering from the deployer to the receivers wallet. Swap
-			transaction = await token.connect(exchange).transferFrom(deployer.address, receiver.address, amount)		
-			result = await transaction.wait()
+				//Exchange is transfering from the deployer to the receivers wallet. Swap
+				transaction = await token.connect(exchange).transferFrom(deployer.address, receiver.address, amount)		
+				result = await transaction.wait()
 			})
 
 			it('transfer token balances', async () => {
